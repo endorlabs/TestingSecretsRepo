@@ -24,7 +24,7 @@ jobs:
     - name: Compile Package
       run: mvn clean install
     - name: Run endorctl
-      uses: endorlabs/github-action@b51bd06466b545f01a6ac788e3e1147695d3936c
+      uses: endorlabs/github-action@1d61c14fcf7fd93bed7e58873a3849aaaee838f3
       with:
         namespace: "demo"
         api: "https://api.staging.endorlabs.com"
