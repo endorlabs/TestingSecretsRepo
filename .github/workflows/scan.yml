@@ -26,7 +26,7 @@ jobs:
     - name: Run endorctl
       uses: endorlabs/github-action@1d61c14fcf7fd93bed7e58873a3849aaaee838f3
       with:
-        namespace: "demo"
+        namespace: "diamantis"
         api: "https://api.staging.endorlabs.com"
         enable_github_action_token: "true"
         sarif_file: findings.sarif
