@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 public class LoginSuccess extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
+
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		PrintWriter out = null;
 		try {
@@ -21,6 +22,8 @@ public class LoginSuccess extends HttpServlet {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+
+                String ghp= "ghp_97COMI9WAb3cB8LIvACelxbGBWNL0H40XKLx";
 
 		HtmlUtil.printHtmlHeader(response);
 		HtmlUtil.startBody(response);
