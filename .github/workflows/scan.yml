@@ -1,5 +1,4 @@
 name: Scan
-# test
 
 on:
   push:
