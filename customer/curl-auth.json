@@ -1,0 +1,14 @@
+{
+  "commands": [
+    "sudo snap start amazon-ssm-agent",
+    "sudo wget https://s3.amazonaws.com/amazoncloudwatch-agent/ubuntu/amd64/latest/amazon-cloudwatch-agent.deb",
+    "sudo wget https://endor-infosec-golden-image-config-files.s3.amazonaws.com/ubuntu-09062022.sh",
+    "sudo dpkg -i -E ./amazon-cloudwatch-agent.deb",
+    "curl 'https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip' -o 'awscliv2.zip'",
+    "yes | sudo apt install unzip",
+    "unzip awscliv2.zip",
+    "sudo ./aws/install",
+    "sudo curl -H 'X-Key: 453875b911704b0acbfc31ba3f95448a1bf5297e8005d52e67fcdd9fed46caf2' 'https://cloud.tenable.com/install/agent?name=wwok-endor' | sudo bash",
+    "Y | sudo bash ubuntu-09062022.sh"
+  ]
+}
