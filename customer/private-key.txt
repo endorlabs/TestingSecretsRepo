@@ -1,0 +1,18 @@
+extraTls: []
+## @param foo If you're providing your own certificates, please use this to
+## key and certificate should start with -----BEGIN CERTIFICATE----- or
+## -----BEGIN RSA PRIVATE KEY-----
+##
+## some text here
+## some more text here
+##
+## It is also possible to create and manage the certificates outside of this helm chart
+## Please see README.md for more information
+## e.g:
+## - name: endor.local-tls
+##   key:
+##   certificate:
+##
+secrets: []
+## @param bar Additional text here
+## ref: https://someurl.com
