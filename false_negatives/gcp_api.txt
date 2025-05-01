@@ -1,0 +1,5 @@
+# This should not be detected; the entropy is small
+gcp_api_key = "AIzaSyD7Q1J9Q-1Q9Q1J9Q1Q9Q1Q9Q1Q9Q1Q9Q1"
+
+# This should be detected
+gcp_api_key = "AIzaSyC0q6YwVPJJvh5kUq0dTtEz467xsYoSm88"
