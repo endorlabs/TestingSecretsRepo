@@ -15,3 +15,5 @@ def ditto():
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
+
+MY_KEY=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
