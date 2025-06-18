@@ -35,10 +35,10 @@ self._aws_access_key_id=AKIALALEMEL33243OLIA
 self.aws_secret_key_id:wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 
 AWS_ACCESS_KEY_ID=AKIALALEMEL33243OLIA
-self.test.secret_key_id=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+self.test.secret_key_id= wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 
-setting_1.access_key_id=AKIALALEMEL33243OLIA
-setting_1.secret_key_id:wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+setting_1.access_key_id= AKIALALEMEL33243OLIA
+setting_1.secret_key_id :wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 
-settings.access_key_id=AKIALALEMEL33243OLIA
-settings.secret_key_id:wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+settings.access_key_id = AKIALALEMEL33243OLIA
+settings.secret_key_id : wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
