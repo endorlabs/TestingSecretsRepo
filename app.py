@@ -7,6 +7,7 @@ app = Flask(__name__)
 def hello_world():
     ak_flask_token="ak-sec-1234567890"
     MY_KEY="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"
+    Claude="sk-ant-api03-TiPYqdxylPFh2e7B-JYs_6Z7e5hmNdfDONDKUMUWLbs0DLKyL8JNHtBpDS1h73xJdxtueAHRse4h6Zc8teTHlQ-UNLXByAA"
     return "<p>Flask says Hello!!</p>"
 
 @app.route("/ditto")
