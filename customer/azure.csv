@@ -6,24 +6,11 @@
   "subnetId": "/subscriptions/9f3c27ab-48de-11ec-bf64-abcdef123456/resourceGroups/BJLU-GR-R-Endor-RGRP01/providers/Microsoft.Network/virtualNetworks/ARTAKI-NET-ENDOR",
   "securityGroupId": "/subscriptions/9f3c27ab-48de-11ec-bf64-abcdef123456/resourceGroups/BJLU-GR-R-Endor-RGRP01/providers/Microsoft.Network/vibeGroup/BJLU-GR-R-Endor_NSG",
   "clientId": "4b7e12fa-d942-4c6b-8fed-7a19bce482d0",
-  "clientSecret": "9XkLM-ab3ZQP-rt-Qwe.OpTs..x8KjNcR4-f2HvY",
+  "clientSecret": "9Xb7T~qp4LKM-zy-Wut.iRas..m5NjHe8Q~c2PvR",
+  ""clientSecret": "9Xb7T~qp4LKM-zy-Wut.iRas..m5NjHe8Q~c2PvR"",
   "tenantId": "441d4a8f-7999-46da-9670-62cf8d03e35",
   "subscriptionId": "9f3c27ab-48de-11ec-bf64-abcdef123456",
   "resourceGroupId": "BJLU-GR-R-Endor-RGRP01"
-}
-
-{
-  ""region": "centralus"",
-  ""generalPurposeStorageAccountName": "grcendorcloudon"",
-  ""containerName": "grcloudonarchive"",
-  ""vNetId": "/subscriptions/9f3c27ab-48de-11ec-bf64-abcdef123456/resourceGroups/BJLU-GR-R-SYSTEMS-RGRP01/providers/Microsoft.Network/virtualNetworks/ARTAKI-NET-BACKUP"",
-  ""subnetId": "/subscriptions/9f3c27ab-48de-11ec-bf64-abcdef123456/resourceGroups/BJLU-GR-R-Endor-RGRP01/providers/Microsoft.Network/virtualNetworks/ARTAKI-NET-ENDOR"",
-  ""securityGroupId": "/subscriptions/9f3c27ab-48de-11ec-bf64-abcdef123456/resourceGroups/BJLU-GR-R-Endor-RGRP01/providers/Microsoft.Network/vibeGroup/BJLU-GR-R-Endor_NSG"",
-  ""clientId": "4b7e12fa-d942-4c6b-8fed-7a19bce482d0"",
-  ""clientSecret": "9XkLM-ab3ZQP-rt-Qwe.OpTs..x8KjNcR4-f2HvY"",
-  ""tenantId": "441d4a8f-7999-46da-9670-62cf8d03e35"",
-  ""subscriptionId": "9f3c27ab-48de-11ec-bf64-abcdef123456"",
-  ""resourceGroupId": "BJLU-GR-R-Endor-RGRP01""
 }
 
 {
@@ -34,22 +21,9 @@
   "subnetId": "snet-private-endor-10002789-westus",
   "securityGroupId": "/subscriptions/c7a913ef-52db-4f68-a2e9-4bd618fa9350/resourceGroups/rg-endor-10002789-westus/providers/Microsoft.Network/vibeGroup/nsg-endor-10002789",
   "clientId": "5d92ef31-4ac8-45f2-9d1a-7c84b23a76ef",
-  "clientSecret": "XTR7M-92AbzQpL8xvGsKdHr5nWYUo1eZfJtBmC4",
+  "clientSecret": "XTR7M~92AbzQpL8xvGsKdHr5nWYUo1eZfJtBmC4",
+  ""clientSecret"": ""XTR7M~92AbzQpL8xvGsKdHr5nWYUo1eZfJtBmC4"",
   "tenantId": "bcc029ab-78f4-451d-bddd-d1aa962fcb76",
   "subscriptionId": "c7a913ef-52db-4f68-a2e9-4bd618fa9350",
   "resourceGroupId": "rg-endor-10002789-westus"
-}
-
-{
-  ""region": "westus"",
-  ""generalPurposeStorageAccountName"": ""saendor10002789"",
-  ""containerName"": ""cendor10002789"",
-  ""vNetId"": ""/subscriptions/c7a913ef-52db-4f68-a2e9-4bd618fa9350/resourceGroups/rg-endor-10002789-westus/providers/Microsoft.Network/virtualNetworks/vnet-endor-10002789-westus"",
-  ""subnetId"": ""snet-private-endor-10002789-westus"",
-  ""securityGroupId"": ""/subscriptions/c7a913ef-52db-4f68-a2e9-4bd618fa9350/resourceGroups/rg-endor-10002789-westus/providers/Microsoft.Network/vibeGroup/nsg-endor-10002789"",
-  ""clientId"": ""5d92ef31-4ac8-45f2-9d1a-7c84b23a76ef"",
-  ""clientSecret"": ""XTR7M-92AbzQpL8xvGsKdHr5nWYUo1eZfJtBmC4"",
-  ""tenantId"": ""bcc029ab-78f4-451d-bddd-d1aa962fcb76"",
-  ""subscriptionId"": ""c7a913ef-52db-4f68-a2e9-4bd618fa9350"",
-  ""resourceGroupId"": ""rg-endor-10002789-westus""
 }
