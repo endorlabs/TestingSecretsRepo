@@ -10,6 +10,8 @@ CLIENT_SECRET="LOuB8S2_7BclHW3--16_g8n.47mDRwQL.Y"
 # Three (old format, with Q~)
 const clientSecret = "mno3Q~qwertyuiopasdfghjklzxcvbnm123";
 
+# Four (no quotes)
+const clientSecret = mno3Q~qwertyuiopasdfghjklzxcvbnm123
 
 # False positives
 # React
