@@ -25,11 +25,12 @@ jobs:
     - name: Compile Package
       run: mvn clean install
     - name: Run endorctl
-      uses: endorlabs/github-action@bc51934f95a1ff5fc108c047b4e685aee4dc6b86
+      uses: endorlabs/github-action@74d70ba37def0b8747152207bf33b29df9628453
       with:
         namespace: "diamantis"
         api: "https://api.staging.endorlabs.com"
         enable_github_action_token: "true"
+        github_token: ${{ secrets.GITHUB_TOKEN }}
         sarif_file: findings.sarif
         additional_args: "--enable=git,analytics,secrets"
     - name: Upload SARIF to github
