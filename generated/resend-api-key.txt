@@ -1,0 +1,13 @@
+RESEND_API_KEY_DOCS_EXAMPLE=re_c1tpEyD8_NKFusih9vKVQknRAQfmFcWCv
+
+RESEND_API_KEY=re_jDFGxbjH_kqw9KwzDYzkhUdC54rO26zia
+
+re_ogYI6Y6_8Mhq0lFedZ3Y29A1YRmWElfA
+
+re_7swy1aNoE_dP1ZL7w06qTKhpsqmBdB04hF
+
+re_5j6n7A0H_uCf9vIchrdRgNI5utAVp1Gt
+
+re_HGOvmh3h_UGi9ngExLUQEJgdbkqBggBeu1
+
+re_jqSJwMfJYtzRSOadeeKh8ApO8EpSprPd
