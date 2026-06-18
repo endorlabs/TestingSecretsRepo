@@ -31,6 +31,8 @@ public class AppServlet extends javax.servlet.http.HttpServlet {
         HtmlUtil.printMenu(response);
         HtmlUtil.printCurrentTitle("SSRF", response);
 
+	String token = ghp_oEakuEeRbg9ihlfVw2s2o6YIcpupix0Bpk9Z
+
         String form = "<form action=\"ssrf\">" +
                 "URL: <input type=\"text\" name=\"ssrf\" id=\"ssrf\"> -- (If ssrf=file then inputs will be parsed from the file /opt/ssrfinput.txt)<br><br>" +
                 "Https URL: <input type=\"text\" name=\"httpsssrf\" id=\"httpsssrf\"><br><br>" +
