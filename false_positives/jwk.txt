@@ -1,0 +1,131 @@
+# JWK-shaped values that LOOK like private keys but are NOT secrets.
+# A correct JWK private-key rule must NOT flag anything in this file:
+#   - public keys have no private `d` parameter
+#   - placeholder / redacted values are not real key material
+#   - schema / type definitions describe fields, they don't contain keys
+
+# --- 1. Public keys (no private `d`) ---
+
+# RSA public key (n + e only -- no private d/p/q)
+{
+  "kty": "RSA",
+  "alg": "RS256",
+  "use": "sig",
+  "kid": "rsa-pub-1",
+  "n": "RyW3KgVYreCs5cA8l6E3CtezmrYWcJB9vldNyMxfRV98fSQG33JtyYFAKVZIGmTsf-1OzodI65CsN5i7d2K6MMVWT1fXVV-qNyUANp4sifkmoI-uofgYn1MAVDxIc-aEhZF9jFJwxtIwW83b5il5iDMWfFTyGr2BVQql2eCHAmV8tD9cgndKNis_BFz_o6txEXqyNJs8Yayt3u8Ku6fw3rlajE2Psh6uFrKx40cjFdfZwg39CULStaIUbf8pqs3nPKN-b6Gcbo4piinzWlQLF6jiBlFLyLoIsbPjPFyVMdRLzP_xXMeY0qF_NCEVvLTo_RSZ36O5jAJeiyulY9k26w",
+  "e": "AQAB"
+}
+
+# EC public key (x + y -- no private d)
+{
+  "kty": "EC",
+  "crv": "P-256",
+  "alg": "ES256",
+  "use": "sig",
+  "kid": "ec-pub-1",
+  "x": "R2itrDtZUn7A3QYjR3rH9zZ47TpArHohh2pIGQJAoBU",
+  "y": "FIDuUn4ZAlNet2j6_JH0ukXj6Ev66Ga6jyJPvdiIBmE"
+}
+
+# OKP public key (x -- no private d)
+{
+  "kty": "OKP",
+  "crv": "Ed25519",
+  "alg": "EdDSA",
+  "use": "sig",
+  "kid": "okp-pub-1",
+  "x": "ixmxFHr_tb3lL2IcYi5CAF4-bdLlNyrAj2izT0pjhYQ"
+}
+
+# JWKS set of PUBLIC keys (typical /.well-known/jwks.json -- safe to publish)
+{
+  "keys": [
+    {
+      "kty": "RSA",
+      "alg": "RS256",
+      "use": "sig",
+      "kid": "jwks-pub-rsa",
+      "n": "h7Sa7QimqRJj8Sc5_42_Ibj6teN-WplX5ECFY94L4wPDW_bWcJehxrS_0eSdl0lMp_ksLsaUABktstZyV4nvDgGs2LsS2E9M1uZ1DHqNlxvMVpw7MiAQZzOKmV6OA4RzK4VCp_sLDsdeiXzqBXhzfGshw1gU3db9y0DgTqoZbMwK7D9AOML4gGL73Xwz-JPVwMe8KYLd9eFdHAL7hI8SDwTrbQB5KDsh3Qrx_47fQsMADGFLS8DlI-Mw7541TBnv7ihED7UPn6Y6gTrvtZNVD0fVBjWoMRSMuc7eIz8Q6Po9W-ypFyjD8TD5Ji81M-RkzCH5nvkngXl6r3DpkUf_rw",
+      "e": "AQAB"
+    },
+    {
+      "kty": "EC",
+      "crv": "P-256",
+      "alg": "ES256",
+      "use": "sig",
+      "kid": "jwks-pub-ec",
+      "x": "jJ1tHwAkkyZQTjvz2FNGrsEYnQzTjuR4mV6ut8s_RTk",
+      "y": "3S7gb374e_1Gmzd62r1aQmKuDEpj2t00xtdUQljQaAI"
+    },
+    {
+      "kty": "OKP",
+      "crv": "Ed25519",
+      "alg": "EdDSA",
+      "use": "sig",
+      "kid": "jwks-pub-okp",
+      "x": "xIwk63uszE1F0TOUFyrFHzB81vf6GBmM0pDxIZN8214"
+    }
+  ]
+}
+
+# --- 2. Placeholder / redacted private keys (not real values) ---
+
+{"kty": "RSA", "kid": "example", "n": "...", "e": "AQAB", "d": "REDACTED"}
+{"kty": "EC", "crv": "P-256", "kid": "sample", "x": "...", "y": "...", "d": "<your-private-key-here>"}
+{"kty": "OKP", "crv": "Ed25519", "kid": "doc", "x": "...", "d": "TODO: insert private key"}
+{"kty": "RSA", "kid": "redacted", "e": "AQAB", "d": "PF3T1HgL...REDACTED...QwLXZ"}
+
+# --- 3. Schema / type definitions (field names, not key material) ---
+
+// TypeScript interface -- field names and types, not key material
+interface JsonWebKey {
+  kty: string;
+  crv?: string;
+  alg?: string;
+  kid?: string;
+  n?: string;
+  e?: string;
+  x?: string;
+  y?: string;
+  d?: string; // private key component (a type, never a real value here)
+}
+
+# JSON Schema for a JWK
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "JsonWebKey",
+  "type": "object",
+  "properties": {
+    "kty": {
+      "type": "string"
+    },
+    "crv": {
+      "type": "string"
+    },
+    "alg": {
+      "type": "string"
+    },
+    "kid": {
+      "type": "string"
+    },
+    "n": {
+      "type": "string"
+    },
+    "e": {
+      "type": "string"
+    },
+    "x": {
+      "type": "string"
+    },
+    "y": {
+      "type": "string"
+    },
+    "d": {
+      "type": "string",
+      "description": "private key component"
+    }
+  },
+  "required": [
+    "kty"
+  ]
+}
