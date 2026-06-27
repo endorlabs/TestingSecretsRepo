@@ -1,0 +1,207 @@
+# Fake JWK (JSON Web Key) asymmetric PRIVATE keys for secret-scanner testing.
+# Each key carries the private parameter `d`. Values are random base64url of the
+# correct length per key type -- structurally valid, NOT real keys.
+#
+# --- Section 1: pretty-printed individual JWK private keys ---
+
+# RSA private key (1024-bit, RS256)
+{
+  "kty": "RSA",
+  "alg": "RS256",
+  "use": "sig",
+  "kid": "rsa-1024-rs256-1",
+  "n": "X5a_k1WrC-ggLuhLdo4oJdh4Yypm-m8Vvk3ZY0cZWzpClWJ6126B5rCHho7ErylVl9BB-16eYgncFjBKYBwidt5sbHbQ81_CYdsgDCqrVVa0CxiKrT2d-ZjGpq0kfKbPzjSNDbR2dhQQtKZrTYR2mkJpY2Fz939LItGBxM4qbZE",
+  "e": "AQAB",
+  "d": "OMH-UpmrUwlZBMntrWLh303riXmkVI0Q2bnwxM1y0uG10wtE91gok9gZNLpV3W4rkVgv-Fr-hdWyJy7FLo3cDRKyvQaWkbmnN2qeqXpDiR0h7OjfIXEouNnLsMQLReFRK2fqTixJNGoXWaHeJeOYe0kxIVzyK91plCFsANreKb0",
+  "p": "TY7TAWOZX-l57_nzu6risW8UWrqgPG41PR7kFbnr2KvUB1prfmtxcI8b_zQlyzKdq6XsK4AERqKwDkAU-wGDkQ",
+  "q": "zVeSfu3mNzlIHi3352zI5X5xAffDteeO-nrn_DsEYKo4uEPcJl67HmM8lzkYHOVb48KkbpEaJpfdJXx2Mh5lsA",
+  "dp": "J2w7aXNCZHfPtmqFDR-oz5cHVM2HYq6CXxqa75t932x7og-j6r9Uh5h5WrxWLZ0FHWPayU39aTlDbrwXmRIV-Q",
+  "dq": "6S8QB4BLov1EkbTFeJVSaBhkXe51I7JAPJsjmum3q762oU4SmLi7ZNsRXu02VCl-pF2EYKdtQN6gz_oX_ZBuag",
+  "qi": "w0IoqgP60m0xoQQhtQjAxjrDJEOxmSaWiUe9dWJnPxJB8jT75Cg4u7tOnXJUUBXmILOE_X9s_RUMbmUF_mNwJA"
+}
+
+# RSA private key (2048-bit, RSASSA-PKCS1-v1_5, RS256)
+{
+  "kty": "RSA",
+  "alg": "RS256",
+  "use": "sig",
+  "kid": "rsa-rs256-1",
+  "n": "z2WAja4lksx5UciymdqJ54huT1oCNTDdzz96g-Ljqi1oQ5xgH0D1N-th9ExrKiJIf59S0jsRsrQjMt0YyACHqSdSwmZPU0R1bUis6gp0vSQCiPOIk6snzWzjL9pTTQrmARchC_bv78nVI5WY4Tly3yJSZEsmV-YOc94kwaURsZKhGYvveUHxM0ClR2zVYwJgIajD_8XxuPuS9pUBi1iJWh2n0k6rLFtzAAjQXCiXIajCCUDIpohgw_T4Ynv0N6rYpDhP6Mrvr_qPYCAn3N6IMBNYukMrKE23CNqBNswXn5cJFJ8S6iQ5bkRpo5MPxyV4TtSRk9kYkViYy4-KNlGeBQ",
+  "e": "AQAB",
+  "d": "ObLmsJbG8888gafaoO8lYStorCBmXZvVkkEPiU-RnUd-A5Nn5EdomO4myGisjuM2_J5Z42vw3FDo-SsVXNmVMGPeU7Ax_KD29iBDKvGbHw251jH4DVVEkkmIirg54fQ3s7ZT1K_p5TLcToAjKfTQBtgP9VKsdpMU2JLq9QuToCIZeHG-Fq_NmVB19Of88EigB4DtQw5kzsup9Q75zFEZz6EJFBHCzsYJt8-6MOv76kec8dqhg_gKcGcDYhE-3ci2D_U-KBFgN6h6sdtzHwnVLQF62KyrvvGorX4sota1IEIaDipwhaEZCpCxj6u4d2wshgsabWHErMZK7n1A4GfVEQ",
+  "p": "bAAjrPt1siY1F_3jLbE7mZtmwAd8eSVEJ-aQVvntYk0SoxLVHRP_O6j5EVaE3sUcuEAPjHeP0_2gVkQWCdRk1iIpL92wxFDPVZ3lPPGg9_JspgjH904Llf-zFjX3R0FQ55Rlnup-sh47P2WaM5wfdb_NfWYW7C0vcPFGh5PWBBw",
+  "q": "kay_PsTPkYbuSMeDE0aeVSb5moN81RVqzYgegaM3PSB0q8ZWQD19U1ej7KWCNm84EI3PqnKheiKz-Sjo94nrSzFSc3-fPFU1UfXYKvKNe6GZ2pRr4LIOzUdBL_-PB_Amvbsvig9qFLYLl5b8wSCyilIhuYdf5_-WKQ_fcehRh4k",
+  "dp": "Zfhip3QMlYOP5tZj5USI73qHtSTBvZMKw2s8oL4cBLBpCKdvPE7xejvbRQjF1pBB9phMJqOj38L7WIgkNtjypp0WyKBXhc7lKjoF4q5yt8u1i676qqmXBOjN-Nqn_XflvYReGEKMq7-ztKVEmCejnEPH24M6ZeJGm7fpFSbHtlA",
+  "dq": "jh9L5j4i3rMkyf13hBeRnWK18bMgln3-jw2F4LsD9DnG6veOVeAozwhB53Ww33rX_gK_Gre_xsnL0h0bfL5XC3KoBFDVVQHsGz50gnQepWyeapUgrfwhbvsgczfu1BVUUZFbj9Bob4fpbiCsk67ctxDiZvZPgUQLaJg5xpe36GQ",
+  "qi": "asCXKCtj_zfu0J0JfdLtRtf9Bf4B-u34ptEBs9eeM_GdccrHo_6LImGawANATVc6gDoy3_NgRKwCwZKAfUcKm7jlw8PijRoWOe4t0d8c2XtqoSVgvR3Mq8Tl-mCPFrKKQ65Zs5m7j-hJyjORcsW_VbuWTKNq2Eva9cK4Z5-rrNc"
+}
+
+# RSA private key (2048-bit, RSASSA-PSS, PS512)
+{
+  "kty": "RSA",
+  "alg": "PS512",
+  "use": "sig",
+  "kid": "rsa-ps512-1",
+  "n": "zsHUsFHAKLEesHte7zdMoqt7R-y2X6K4Bd9SvXKkVjbb7v2DHT94uo56NvNiIZ41CgOTE6pVMt17qy0X0hgeY0_zJi862Nz8zmMz-9VqbRbAGRewcrpVuThr5jp0S6m5YP7o5dBW9pdaCSQ6K344xPLzbAKrL7JSmQDcQqk9On1B5_8yIz78BsD_bKQk180huR8x_XyKCP-giO69c9_4U4dZxUdVEDZzi9xYwmZhfifNR3hH00n0nEHusf9fHUjOhdCKm9j2-csgAbFr8fiCaHrrWWvs2AYXJvN2M8flWKOdUu-0uzUglYLpSaSAjAy9meBpvT0oXoDKGHBijKYPow",
+  "e": "AQAB",
+  "d": "fs6dexeyEZZybZjILN3gMY8UjOs2dr4m2-Q3A8WVvFCf3sO_ihxmE0ZW35rCtzVJK9TyaFBTr98SPXpSOAV5PnEB7PWicpac2WGAX70TgYJq_qM6sphoH3bioxt7pVG8ZLPYq0svLFjiVBSt-ILgVwypvS_JHO6AF1HEDHy0akGXLDRBqVCGkZOKc8D7QPv95MH9byXGgBkb4BU_Bgwg-2HjBRsiqYA0jGwNjQDkoz62fb8qxGVnVWdX1AA0xX1GEGZh1l5DJ1tWLTvN57MJMtvGaVHVVL32uR6dhZivjbSVH_y48vWnUW8x8mXtMpg14Fo-IdTQq0y0muAZYQFbBw",
+  "p": "H2cGxEvpK7jxU8y7MbqSXE6T3hV99uHpqvS17qazE4ZIgLvfOyPTpDb10myXYwWnCazTa5L8NeawVWpSQ03Uxjbubz5Fft2eCd2G9lnYvi2NgR_O8WaRK19U9LU_ZDF8N0200S21vUhZWapfoW1N_8ap0mN_zLU0iSx7JsgljVc",
+  "q": "bi-k5FziLhvzkJOlbkAzGKNCycJVbXf96qPb-1VyPRC8YQ11u51ZzK5g7lA27QkQEpvNnCFjw_4Bhd9W9IvAEHGberFiKljnJ_pjlPitqKUmA9zzeXn1zWnzqUcKlNnW-CFUfLKXsO2OWy8p04YL2hlxliEA07xczgB3lNrK-EY",
+  "dp": "ZYla0zIEeBMgWMAyGsUznI2B27MGW0sVl6GvvCLxXrCjW9xbkVPNtRDVSG0UApdPF7LvsxoBOrt34o39_qF8TvNNGOGwiQ_QcY0qc0YXlgr3u_6ZwMseYXR4Fxx9uDRUoZUxsLi9PoQDz2MXm1Pjob1ijEh6h118Ge3jlASJkls",
+  "dq": "0524OudwjAgWaro-2CkrTVZgoCS3mmLrtlQfb38OSlTedM10cyrirXO1SmoM7xdTKj7pRoLbYX20iVk6i15biMBBlh01eca6-gP7NP1hb4LcGa-ahrg_SqU3K30uNgROmS-Ogssku_04n_JPqCphCyAIHld1J-7JAz-MOuhtiRo",
+  "qi": "rYgSCMD-jFmZ9mvO00hEpBu0s9lgy86IYZGrGLrNBFSk4Zhqv8DEb8mkWOJwYqRAbW6MlwbF3utvsSm9nzRgli-d7tPpmv5-sOkNvuu2_-oq4TD6Jkwn6J_DrhOzShqtStYQhlDy9IeHjK0cvlZn5yzFJXbOe67uOlvklVOcqUQ"
+}
+
+# RSA private key (2048-bit, RSAES-OAEP, RSA-OAEP-256)
+{
+  "kty": "RSA",
+  "alg": "RSA-OAEP-256",
+  "use": "enc",
+  "kid": "rsa-oaep256-1",
+  "n": "nc6WwBf0WWqqoy5w1syheJJqaJxArPYhFeAU-FezAwGxKPPPnIonn_LmQThCczZNQ4-cOCjDHs3dWSLY1v0vsCImaKxfRAlbEdxyPSyuJ9WNHz-OONDIDOg7mHWGGQWNf3I3CvagxHqQJtZALE4mywg8p2rMBL7ZriCjSQWdp4TYkeyingLbEVNGVAOvIV0xtEN4YmoRXJbdQ58ZAyIlEFCkQ4XBh5S11Ce35Y15dXnNM0dyB_PsCkrotSX2f05j7iZ_1CnNWLmTcXi_sE5bCMOumVs7q4cjkg5rvOznYzgbVKCnFWwlCCWKwHlj_HDbBv3STbwhWJfiwNTpqZ_VOw",
+  "e": "AQAB",
+  "d": "Rj9v_UyIfXJHQdM8gLr-F3PXbIYzkkqwvoPmjLwDVek3mwrld0CfXEvBJlJVzb9LzaALpzmgmOTpowpJl8uqVkfn19dZvmILjRnL4n1MZ_nmd2SFuTlr77rm41orNIYtLjnsGDdcWC6ZG3rq4CpHUXyLMXeVlbD7qLUrPCrUb71up0qNUd7qSFAolrin_FuEwL9gl7eETfytgM1rZ3FT1HURELyU1oh9leH5qfVVu8mDgzvwZHWpe1bBqvccJnwCZCeFLw24FHP2QVE-VcD3yQIyGjGq7AR0Ah4gAox-oRcDn2gk5RiqJLJND0_69GphBlLLR6HBQBNNYtisqEQmtA",
+  "p": "2UWSOq3uz_bcGKM_AzBz6d7Uiz0FWIcuKIUMZVcRF7KmKhqW8SX-S3ccIjLOmpCnNKdXn84p7eK0_Qj0_ScR2p0NC3ec7Y8c_NsSLdZWZ8qJH7rMtLfFjU_JpJtkPf9JIEpHCWhNuXoHTwk087B4kABq0owlagQjXr29Ib14RPU",
+  "q": "50Qog8C7nTTgwzuG__FPdNvjiPfR4tkpskSlY-fGgaowtQKZ8Ajnx6eyysFY8iwgjIE22NZz7Gc49wZKhtfg8SUt7Xwyj8WIDlErzwMc9-7KXXim62D8A7mHyrMh45LC1p2NDvB9Bqi4MK9YUYtm3KkfOILqlJNElXpwpmVfTf8",
+  "dp": "f0V-Onv-2Zcms7V6N_sR7wmk1CFiSNPk_EczMjwhezv1nqeoAfY4QYaA1AFLddUOAdT3TFcYDezW2TRs2JLNTzfFWWkwEIdTL6GS_bENTVWWFH5-DkEjL1tCJOsUZVCT9rlhI1bpX7jKPRM4MKCKcSKSYf1hdiVtEbNFtl3-0O0",
+  "dq": "4pUSZl5BZ87gX2SS8A0WkIOCX_gHi2rSXKgGAo7gEEUbl17n6TQbDLWNZy8W3Q_VrvJ2I1a_H1ivfS90bglJrUv_ZZIYWc69mjPMMrPHRsJJwtUymnra0LvcFjsMq71UtbQPAnKTvoCKi6Xx2BmIOMAArXipPkXC1yvjILZUoas",
+  "qi": "Zxjmz3-BvInZAP9oUnxtD7DXLAGHXaYXTU38ubPSX_fXq_fQ-KQEQ1G-Hv9kyO_mVOGOV-2Fmygx_UHb1FK1mZ4R87OJZHaYT8ws4EFirzvDHca9AJUgscJx9GMLttoiFYmeE8bDT6nbbOxt1gUqwRb1hQ8qgiFKEAbjXh-NDIk"
+}
+
+# EC private key (P-256, ES256)
+{
+  "kty": "EC",
+  "crv": "P-256",
+  "alg": "ES256",
+  "use": "sig",
+  "kid": "ec-p256-1",
+  "x": "9E8C5FkEvh7DT4sRgxZUGhaKqKHuIOQX-6AABMvOJBM",
+  "y": "MyfLnizddqD2AlWjCjFvmKs7AVX8TmKfJHt8CO0CVbA",
+  "d": "VIoQm682xkhxa-0yY6UKWL7QBVZatepX2POK5pJ3o1w"
+}
+
+# EC private key (P-384, ES384)
+{
+  "kty": "EC",
+  "crv": "P-384",
+  "alg": "ES384",
+  "use": "sig",
+  "kid": "ec-p384-1",
+  "x": "vDprbsA9E5zh7uxF81NYkM_b-JrTa7J9XUWcohsyeeIosMyq_zQ4Jo_nJuWn3gyL",
+  "y": "oSuCwbm2AVhCWa3C8aN-h9XIflXyYR57xTGotNDT4VWW-u_QebH4iHxYyoKJMOcN",
+  "d": "3wQLiwrkOM76U3DOBbNr8NvMInbMs27FRKLLaJb32WEErH9iUCkeTiPEvQOzVO7W"
+}
+
+# EC private key (P-521, ES512)
+{
+  "kty": "EC",
+  "crv": "P-521",
+  "alg": "ES512",
+  "use": "sig",
+  "kid": "ec-p521-1",
+  "x": "3V8I86UzRl2vht00cFSBKmc_6meXyuVVZZ9a4lGhfMA98yn_vL3jxs9C02r6Ww0aZjPtftNbXKJk2i6YxruddTjM",
+  "y": "0kgOW6nd7Za8VyJtvyYgIUDXaHeLFE6Pl6Mb2Sx6Dhw5DJ4MsbaVWpeUy-7Z95wq1LITzcfHP1_OqnK2NMYGZ-Dg",
+  "d": "ggcT_geco7T1JZTprVwGbxNl94Yuk_9B6bLms64rE9NhSPQvMfl23xdDBoM72VQL2ULGk-pKjznPVt5i_R4iewMQ"
+}
+
+# EC private key (secp256k1, ES256K)
+{
+  "kty": "EC",
+  "crv": "secp256k1",
+  "alg": "ES256K",
+  "use": "sig",
+  "kid": "ec-secp256k1-1",
+  "x": "AmmdHqXYqYSZug0qtrstZKnkI_mAdKUB-SBezo0H3XE",
+  "y": "VEMSoDEd7hdgb2MJYGF0SXdpLjq2p__VvM7Y9o91KZc",
+  "d": "YHMTjR8QwCD3W2shDq2znc4F9L2C3tTbRFsNrxDES-I"
+}
+
+# OKP private key (Ed25519, EdDSA)
+{
+  "kty": "OKP",
+  "crv": "Ed25519",
+  "alg": "EdDSA",
+  "use": "sig",
+  "kid": "okp-ed25519-1",
+  "x": "kRRX-76Gkm2leCj0cUZnU5SOcN5oa02QcjzlBrbePK8",
+  "d": "QXMaAIEOMvIiKZK9Juo03JZhnzjRZk4lnsX114EuYgM"
+}
+
+# OKP private key (Ed448, EdDSA)
+{
+  "kty": "OKP",
+  "crv": "Ed448",
+  "alg": "EdDSA",
+  "use": "sig",
+  "kid": "okp-ed448-1",
+  "x": "kUSclGjVG-YrM1FOX_YmB8y0EJcI7GZ9rlJ22U68gbW_5oGg6XNRcpi5HmclLby2xmEaABh8_M7_",
+  "d": "074K0JYSljxdSpLkYqFPnXc16LSy2hcBOVZ0suM4wOeOy_dYchft8mO6Ipx9rHHaXgQwUhMiWpGr"
+}
+
+# OKP private key (X25519, ECDH-ES)
+{
+  "kty": "OKP",
+  "crv": "X25519",
+  "alg": "ECDH-ES",
+  "use": "enc",
+  "kid": "okp-x25519-1",
+  "x": "J4UXMlnjX7nMqZZ8Sly1xbScq-7xq_3w6WXcyLkUJ2s",
+  "d": "S2v3bfm2qRpKDSHFOYqemj_HGwAaCjY1WgnbF1j5Kr0"
+}
+
+# OKP private key (X448, ECDH-ES)
+{
+  "kty": "OKP",
+  "crv": "X448",
+  "alg": "ECDH-ES",
+  "use": "enc",
+  "kid": "okp-x448-1",
+  "x": "HcaoFOHjwCeJYN6KudGkN374R6tGtUvvITzkr9YhjS4MrAfL0FI7H4EIZhfurII-hsaX0wWbeHk",
+  "d": "qPMmXW0MsboKtqK0gm9Y8N1QpZti_vVRkNNV63b4-I1ACHp7Tl2nVYo8pTU2O22O84-FJX1IX5s"
+}
+
+# --- Section 2: JWKS set (leaked jwks.json containing private keys) ---
+
+{
+  "keys": [
+    {
+      "kty": "RSA",
+      "alg": "RS256",
+      "use": "sig",
+      "kid": "jwks-rsa-1",
+      "n": "Kr9Mxc-kPpTDnp8rHMxjbHcY9pTRWTB0qVwlWbBRzhK8dZ0Zk2_nTDU3o4Yad70UhYT2LDE4_9p_2I64HVI4YTdvLr7JCItLRLBfedDkV9YOP3IWIo9mokVs4lVSEN2qRExbpL503TH4oCHfmd8PRtJvC8fzZYcFYqgic5SOW3GPl1nsv1PKxBYqYn5osyVos00N_vqJzvANJhyUMXnftizlEh9QY35FZaTWI76zyt85rUvh5TXa3stBhlw2JxwXMidEPucnGYvuwC7hoR3byTn9NU8T8WEqNUVNZudED6F3DskPKz8Fa90XZABPsaHnq_WnZjHh50r7f5nXzuBZXA",
+      "e": "AQAB",
+      "d": "pKqqgA_ZYiKh0FSBS3Ok-hNh1qqYFrFm_62JW10telS_Afb-2gLwrZAdOty2rzL76ew0zrtbcW54goMDUrbaQNmRIxTMS-T7pRY2yiljifP3aDhwKTMQpBMMPbJ0cylo0p7sNNhxquXPd4y59U3yd8I0TtJoatbGCduBxzfMH6nYg9lyaLrLoYl4D9HsGELHeFP5xXDpYF57V0-LQFmpwL5x8EaK5XPsZW2UB8C5hsG-cVLFJKQDlu8kbD3Hw17kqpBMTKj4QmdU_g_dzkQtHNhNxYfXOpb7GIQOJAxjOJFEgtcpU1Hi_3LLwJvqG6e6zeGL4petbFu8LqLjEgVzkg",
+      "p": "ZBxo9fEvNACNcQu7XM2ytPksx4I0OmYJGvQyDr9S07SCUoFacikrbA6OnKZ8PekPvR2L87gBMm-g_UiWje8lJpDbLYRDtgadjWqdJqofEsRvMhT56pL-5IMihljdxnVFTxCeEQKK97i1CzbIKtJlPUAKGQRRCjsQUnSaueAk1gU",
+      "q": "GQmvlSXcGKXSbqQPDd2h2LdPs6Larp80yHl1A0X_f0ZiOXA98bKy1gtZrBiFbe4nKQ0Wj2iX2asHL6IGocfwf_v6bR8mUn9yxgXqHUt6d9z7loULYLB6kzSOK6Fi_HmqfUykonH-AnM2orCUR6H6xaC3UAcnev2pmasmKOUR8u4",
+      "dp": "a6XsT_HMdTqHcvLSNVvn18DIUK1jMN4IQA2HDUfDetvYZIl5knD1Oo8UwfFgEs3_BHCWws7Ul9Y31wpMYGzDcBWDRoySTtdtSwvY_z_V4BB28cTdExp5H6fb_r-o7iCd6UTkdsL0jVIeHmbu80iYwBpgwZpRboLtxb_s2WKtePE",
+      "dq": "f0iuFymgXbc_zx9wHlcz2qMruxgGHn_xIh6gmnXsbjyBjnbHfxEgM9VbghmjV-ts1Es7zPVQnDR_IEUDl-4aVO1akyxD9S2rJ3yytr2RvdZjWhHOENvFlzzCwQiOP5CFsyRF_PZ0TQ-FwhoY9DP3kNDvl4UvGb1zPyoWTWHpyLU",
+      "qi": "4cX8WOH8ATfhoGuS95wu3FkPI4ABkGSkrkQy0yeSt6snsQE7gWxXJT9NGVZ7Fm_UXecuT5W3vTf7S9IU_3cZrXzG_5lPM5stygAH2mszEaARVMN7am85oWOi0niHqIE1-BzbigsUaSumFlLwOhMIzUlr8WUSLnw8uOhBVERFSzU"
+    },
+    {
+      "kty": "EC",
+      "crv": "P-256",
+      "alg": "ES256",
+      "use": "sig",
+      "kid": "jwks-ec-p256-1",
+      "x": "dKAyVsFg-ATIDWW8DWZHbAmBURQBePkxfWa9QakgF_g",
+      "y": "zD1tgeXlnR9hS52pTQZjVjGYDF2kiCjMTZdANXIYvnU",
+      "d": "ZTyB1pF7U1xNY_j44kHU8nUhiplRS3xev2bjqHrMoa8"
+    },
+    {
+      "kty": "OKP",
+      "crv": "Ed25519",
+      "alg": "EdDSA",
+      "use": "sig",
+      "kid": "jwks-ed25519-1",
+      "x": "sfl8FKiZ28Y8S4ewvZn-BijmS2sV3tWF3l0O9HBVLGs",
+      "d": "4SKcF-0DXiBk6HGqqICNvnWTOkEx0WfdVA3GaFPdf-8"
+    }
+  ]
+}
+
+# --- Section 3: compact single-line JWK private keys ---
+
+{"kty":"EC","crv":"secp256k1","alg":"ES256K","use":"sig","kid":"compact-secp256k1-1","x":"u3wapLUskLLPXFtqmozvf9Xr-lu9y89Nxkv5oVZb5PM","y":"4TFV99ii_aO6p9uPki2QHT1HI0_90v1Rb5X4Bny_95A","d":"Z_EdCiq2Gn3KlWX7lJGNjIOQK7NQI_d2nyat9SzYCyU"}
+{"kty":"OKP","crv":"X25519","alg":"ECDH-ES","use":"enc","kid":"compact-x25519-1","x":"20oihf1-_keBoOiUQcpIJH2qoQG571mp9jzAh6-X1Wk","d":"TQtrc0dNKXn53pKZy8e-jh2p1XnnKV8NvuKus7eA6SA"}
+{"kty":"EC","crv":"P-256","alg":"ES256","use":"sig","kid":"compact-ec-p256-1","x":"SXyrQzVCVxfqerHL51bsC8c2lOac3R-JL2dePT97nYk","y":"PEmv96OVTbhVOlvNheTZA17gqfwRICG95v_6x9N9Q54","d":"h_vOU0Fv-q5Fr5RwvKMeJRJOjZHCdHTvAATFZRf9b7w"}
